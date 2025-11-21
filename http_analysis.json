@@ -1,0 +1,21 @@
+{
+  "issues": [
+    "Campaign Budget - Ad Set Create: No retry configured",
+    "AD Set Budget - Ad Set Create: No retry configured",
+    "Camp Budget - Camp. Create: No retry configured",
+    "Ad Set Budget - Camp. Create: No retry configured",
+    "Camp Budget - Camp. update: No retry configured",
+    "Campaign Budget - Ad Create1: No retry configured",
+    "Ad Set Budget - Ad Create: No retry configured",
+    "Campaign Budget - Ad Set Update: No retry configured",
+    "\ud83d\udd04 Fetch from Meta: No retry configured",
+    "Campaign Budget - Ad Update (Ad ID): No retry configured",
+    "Campaign Budget - Ad Update (Ad Creatives): No retry configured",
+    "Campaign Budget - Ad Update (New Ad Body): No retry configured",
+    "Ad Set Budget - Camp. update: No retry configured",
+    "Ad Set Budget - Ad Set Update: No retry configured",
+    "Ad Set Budget - Ad Update (Ad ID): No retry configured",
+    "Ad Set Budget - Ad Update (New Ad Body): No retry configured",
+    "Ad Set Budget - Ad Update (Ad Creatives): No retry configured"
+  ]
+}
