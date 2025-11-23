@@ -1,0 +1,13 @@
+{
+  "issues": [],
+  "warnings": [
+    "4 Code nodes without try-catch"
+  ],
+  "stats": {
+    "total_nodes": 64,
+    "http_nodes": 17,
+    "code_nodes": 16,
+    "http_without_retry": 0,
+    "code_without_try": 4
+  }
+}
