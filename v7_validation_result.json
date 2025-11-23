@@ -1,0 +1,13 @@
+{
+  "all_passed": true,
+  "critical_issues": [],
+  "warnings": [
+    "Campaign Budget - Ad Set Update: Check _finalBody usage",
+    "Ad Set Budget - Ad Set Update: Check _finalBody usage"
+  ],
+  "stats": {
+    "total_nodes": 64,
+    "code_nodes": 16,
+    "http_nodes": 17
+  }
+}
