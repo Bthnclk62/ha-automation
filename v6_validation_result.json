@@ -1,0 +1,14 @@
+{
+  "all_passed": false,
+  "issues_found": [
+    "Issue 7: Non-editable fields present",
+    "Issue 9: Non-editable fields present"
+  ],
+  "stats": {
+    "total_nodes": 64,
+    "code_nodes": 16,
+    "code_without_try": 7,
+    "http_nodes": 17,
+    "http_without_retry": 11
+  }
+}

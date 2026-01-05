@@ -1,0 +1,102 @@
+{
+  "total_nodes": 64,
+  "total_connections": 65,
+  "disconnected_nodes": [],
+  "node_types": {
+    "n8n-nodes-base.googleSheetsTrigger": 1,
+    "n8n-nodes-base.set": 6,
+    "n8n-nodes-base.if": 4,
+    "n8n-nodes-base.httpRequest": 17,
+    "n8n-nodes-base.dateTime": 2,
+    "n8n-nodes-base.googleSheets": 14,
+    "n8n-nodes-base.switch": 1,
+    "n8n-nodes-base.code": 16,
+    "n8n-nodes-base.merge": 2,
+    "n8n-nodes-base.scheduleTrigger": 1
+  },
+  "modules": {
+    "trigger": [
+      "Meta Ads Automation",
+      "Schedule Trigger"
+    ],
+    "create_campaign": [
+      "Campaign Budget - Ad Set Create",
+      "Campaign Budget - Ad Create1",
+      "Campaign Budget - Ad Set Create → Build Final Ad Body (CBO)"
+    ],
+    "create_adset": [
+      "Campaign Budget - Ad Set Create",
+      "AD Set Budget - Ad Set Create",
+      "Ad Set Budget - Camp. Create",
+      "Write Ad Set ID",
+      "Ad set name",
+      "Ad Set Result Normalize",
+      "Write Ad Set ID1",
+      "Build Final Ad Set Body",
+      "Build Final Ad Set Body1",
+      "Campaign Budget - Ad Set Create → Build Final Ad Body (CBO)",
+      "Ad Set Budget - Ad Set Create → Build Final Ad Body (ABO)",
+      "Ad Set Budget - Ad Create",
+      "Campaign Budget - Ad Set Update",
+      "Build Final Ad Set UPDATE Body (CBO)",
+      "Ad Set Budget - Camp. update",
+      "Build Final Ad Set UPDATE Body (ABO)",
+      "Ad Set Budget - Ad Set Update",
+      "Ad Set Budget - Ad Update (Ad ID)",
+      "Ad Set Budget - Ad Update (New Ad Body)",
+      "Ad Set Budget - Ad Update (Ad Creatives)"
+    ],
+    "create_ad": [
+      "Campaign Budget - Ad Set Create",
+      "AD Set Budget - Ad Set Create",
+      "Ad Set Budget - Camp. Create",
+      "Campaign Budget - Ad Create1",
+      "Campaign Budget - Ad Set Create → Build Final Ad Body (CBO)",
+      "Ad Set Budget - Ad Set Create → Build Final Ad Body (ABO)",
+      "Ad Set Budget - Ad Create"
+    ],
+    "update": [
+      "Camp Budget - Camp. update",
+      "Campaign Budget - Ad Set Update",
+      "Build CBO Campaign Update Body",
+      "Build Final Ad Set UPDATE Body (CBO)",
+      "Build CBO Ads Update",
+      "Campaign Budget - Ad Update (Ad ID)",
+      "Campaign Budget - Ad Update (Ad Creatives)",
+      "Campaign Budget - Ad Update (New Ad Body)",
+      "Build ABO Campaign Update Body",
+      "Ad Set Budget - Camp. update",
+      "Build Final Ad Set UPDATE Body (ABO)",
+      "Ad Set Budget - Ad Set Update",
+      "Build ABO Ads Update",
+      "Ad Set Budget - Ad Update (Ad ID)",
+      "Ad Set Budget - Ad Update (New Ad Body)",
+      "Ad Set Budget - Ad Update (Ad Creatives)"
+    ],
+    "sync": [
+      "Code in JavaScript - Sync",
+      "Sync to Google Sheets",
+      "Sync to Google Sheets - Fetch from Meta"
+    ],
+    "error_handling": [],
+    "sheets_write": [
+      "Write Campaign ID",
+      "Write Campaign ID1",
+      "Write Ad Set ID",
+      "Write Ad Set ID1",
+      "Write Ad ID",
+      "Mark Action NONE (CBO)",
+      "Mark Action NONE (ABO)",
+      "Write AD ID1",
+      "Sync to Google Sheets",
+      "Sync to Google Sheets - Fetch from Meta",
+      "Mark Action NONE (CBO) New Ad Body",
+      "Mark Action NONE (CBO)-Name/Status",
+      "Mark Action NONE (ABO)-Name/Status",
+      "Mark Action NONE (ABO) New Ad Body"
+    ]
+  },
+  "issues": [
+    "⚠️  No HTTP Request nodes found (Meta API calls missing?)"
+  ]
+}

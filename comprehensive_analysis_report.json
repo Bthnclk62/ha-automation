@@ -1,0 +1,19 @@
+{
+  "total_nodes": 64,
+  "create_nodes": 16,
+  "update_nodes": 16,
+  "sync_nodes": 5,
+  "issues_found": 10,
+  "issues": [
+    "Campaign Budget - Ad Set Create: No retry logic",
+    "AD Set Budget - Ad Set Create: No retry logic",
+    "Camp Budget - Camp. Create: No retry logic",
+    "Ad Set Budget - Camp. Create: No retry logic",
+    "Campaign Budget - Ad Create1: No retry logic",
+    "Ad Set Budget - Ad Create: No retry logic",
+    "Build Final Ad Set UPDATE Body (CBO): Sends non-editable fields - billing_event, optimization_goal, bid_strategy, targeting",
+    "Build Final Ad Set UPDATE Body (CBO): Missing date conversion",
+    "Build Final Ad Set UPDATE Body (ABO): Sends non-editable fields - billing_event, optimization_goal, bid_strategy, targeting",
+    "Build Final Ad Set UPDATE Body (ABO): Missing date conversion"
+  ]
+}

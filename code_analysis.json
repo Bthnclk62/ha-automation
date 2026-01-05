@@ -1,0 +1,244 @@
+{
+  "findings": {
+    "budget_conversion": [
+      {
+        "node": "Build Final Ad Set Body",
+        "has_conversion": true,
+        "code_snippet": "/**\n * Build Final Ad Set Body (CBO)\n * Çıkış: item.json._finalBody\n * Sadece Campaign Budget kampanyalarındaki AD SET CREATE için kullanılır.\n * Bu yüzden /adsets isteğinde bütçe alanı GÖNDERMEYECEĞİ"
+      },
+      {
+        "node": "Build Final Ad Set Body1",
+        "has_conversion": true,
+        "code_snippet": "// Build Final Ad Set Body (ABO/CBO ortak)\n// Çıkış: item.json._finalBody\n\n// ------------- Helpers -------------\nfunction clean(v) {\n  if (typeof v === 'string') {\n    return v\n      .replace(/\\u00A0"
+      },
+      {
+        "node": "Code in JavaScript - Sync",
+        "has_conversion": true,
+        "code_snippet": "// Run Once for Each Item\n\n// ---- yardımcılar ----\nconst row = $json;\nconst norm = (v) => {\n  if (v == null) return '';\n  let s = String(v).trim();\n  // =\"123...\" gibi formülleri temizle\n  if (s.star"
+      },
+      {
+        "node": "Code in JavaScript - Fetch from Meta",
+        "has_conversion": true,
+        "code_snippet": "// === helpers ===\nconst get = (obj, path, def='') => {\n  try { return path.split('.').reduce((o,k)=> (o==null?undefined:o[k]), obj) ?? def; }\n  catch { return def; }\n};\n\n// Excel/Sheets için TEK biçi"
+      },
+      {
+        "node": "Code in JavaScript3",
+        "has_conversion": true,
+        "code_snippet": "// === helpers ===\nconst norm = (v) => (v == null ? '' : String(v).trim());\nconst isFilled = (v) => norm(v) !== '';\nconst pick = (fresh, backup, original='') =>\n  isFilled(fresh) ? norm(fresh) : (isFi"
+      },
+      {
+        "node": "🛡️ Input Validation",
+        "has_conversion": true,
+        "code_snippet": "// ===== Stable staticData init (v1 uyumlu) =====\nconst staticData =\n  ($workflow.getStaticData && $workflow.getStaticData('global')) ||\n  ($workflow.staticData ||= {}); // fallback\n\nstaticData.errors"
+      },
+      {
+        "node": "Build CBO Campaign Update Body",
+        "has_conversion": true,
+        "code_snippet": "/**\n * Build CBO Campaign Update Body\n * Çıkış:\n *   item.json._campaignId         -> güncellenecek campaign id\n *   item.json._campaignUpdateBody -> PATCH body (sadece dolu alanlar)\n */\n\n// ---------"
+      },
+      {
+        "node": "Build Final Ad Set UPDATE Body (CBO)",
+        "has_conversion": true,
+        "code_snippet": "/**\n * Build Final Ad Set UPDATE Body (CBO)\n * Çıkış: item.json._finalBody\n * Kullanım: /{adset_id} endpoint'ine POST ile gönderilecek gövde\n * Önemli: CBO olduğu için DAILY_BUDGET / LIFETIME_BUDGET G"
+      },
+      {
+        "node": "Build ABO Campaign Update Body",
+        "has_conversion": true,
+        "code_snippet": "/**\n * Build ABO Campaign Update Body\n * Çıkış:\n *   item.json._campaignId         -> güncellenecek campaign id\n *   item.json._campaignUpdateBody -> POST/PATCH body (sadece dolu alanlar)\n */\n\n// ----"
+      },
+      {
+        "node": "Build Final Ad Set UPDATE Body (ABO)",
+        "has_conversion": true,
+        "code_snippet": "/**\n * Build Final Ad Set UPDATE Body (ABO)\n * Çıkış: item.json._finalBody\n * Kullanım: /{adset_id} endpointine POST ile gönderilecek gövde\n * Not: ABO olduğu için daily_budget ad set seviyesinde gönd"
+      }
+    ],
+    "phone_normalization": [
+      {
+        "node": "Build Final Ad Set Body",
+        "has_normalization": true,
+        "code_snippet": "/**\n * Build Final Ad Set Body (CBO)\n * Çıkış: item.json._finalBody\n * Sadece Campaign Budget kampanyalarındaki AD SET CREATE için kullanılır.\n * Bu yüzden /adsets isteğinde bütçe alanı GÖNDERMEYECEĞİ"
+      },
+      {
+        "node": "Build Final Ad Set Body1",
+        "has_normalization": true,
+        "code_snippet": "// Build Final Ad Set Body (ABO/CBO ortak)\n// Çıkış: item.json._finalBody\n\n// ------------- Helpers -------------\nfunction clean(v) {\n  if (typeof v === 'string') {\n    return v\n      .replace(/\\u00A0"
+      },
+      {
+        "node": "Campaign Budget - Ad Set Create → Build Final Ad Body (CBO)",
+        "has_normalization": true,
+        "code_snippet": "/**\n * Build Final Ad Body (CBO/ABO) - /ads\n * Çıkış: item.json._finalAdBody\n */\n\n// ------------- Helpers -------------\nfunction clean(v) {\n  if (typeof v === 'string') {\n    return v\n      .replace("
+      },
+      {
+        "node": "Ad Set Budget - Ad Set Create → Build Final Ad Body (ABO)",
+        "has_normalization": true,
+        "code_snippet": "/**\n * Build Final Ad Body (CBO/ABO) - /ads\n * Çıkış: item.json._finalAdBody\n */\n\n// ------------- Helpers -------------\nfunction clean(v) {\n  if (typeof v === 'string') {\n    return v\n      .replace("
+      },
+      {
+        "node": "Code in JavaScript - Fetch from Meta",
+        "has_normalization": true,
+        "code_snippet": "// === helpers ===\nconst get = (obj, path, def='') => {\n  try { return path.split('.').reduce((o,k)=> (o==null?undefined:o[k]), obj) ?? def; }\n  catch { return def; }\n};\n\n// Excel/Sheets için TEK biçi"
+      },
+      {
+        "node": "Code in JavaScript3",
+        "has_normalization": true,
+        "code_snippet": "// === helpers ===\nconst norm = (v) => (v == null ? '' : String(v).trim());\nconst isFilled = (v) => norm(v) !== '';\nconst pick = (fresh, backup, original='') =>\n  isFilled(fresh) ? norm(fresh) : (isFi"
+      },
+      {
+        "node": "🛡️ Input Validation",
+        "has_normalization": true,
+        "code_snippet": "// ===== Stable staticData init (v1 uyumlu) =====\nconst staticData =\n  ($workflow.getStaticData && $workflow.getStaticData('global')) ||\n  ($workflow.staticData ||= {}); // fallback\n\nstaticData.errors"
+      },
+      {
+        "node": "Build CBO Ads Update",
+        "has_normalization": true,
+        "code_snippet": "// Build CBO Ads UPDATE Bodies\n// Çıkışlar:\n//   item.json._adId           -> update edilecek mevcut ad id\n//   item.json._accountId      -> act_{account_id} için\n//   item.json._adUpdateBody   -> sad"
+      },
+      {
+        "node": "Build Final Ad Set UPDATE Body (ABO)",
+        "has_normalization": true,
+        "code_snippet": "/**\n * Build Final Ad Set UPDATE Body (ABO)\n * Çıkış: item.json._finalBody\n * Kullanım: /{adset_id} endpointine POST ile gönderilecek gövde\n * Not: ABO olduğu için daily_budget ad set seviyesinde gönd"
+      },
+      {
+        "node": "Build ABO Ads Update",
+        "has_normalization": true,
+        "code_snippet": "// Build CBO Ads UPDATE Bodies\n// Çıkışlar:\n//   item.json._adId           -> update edilecek mevcut ad id\n//   item.json._accountId      -> act_{account_id} için\n//   item.json._adUpdateBody   -> sad"
+      }
+    ],
+    "utm_params": [
+      {
+        "node": "Build Final Ad Set Body",
+        "has_utm": true,
+        "code_snippet": "/**\n * Build Final Ad Set Body (CBO)\n * Çıkış: item.json._finalBody\n * Sadece Campaign Budget kampanyalarındaki AD SET CREATE için kullanılır.\n * Bu yüzden /adsets isteğinde bütçe alanı GÖNDERMEYECEĞİ"
+      },
+      {
+        "node": "Campaign Budget - Ad Set Create → Build Final Ad Body (CBO)",
+        "has_utm": true,
+        "code_snippet": "/**\n * Build Final Ad Body (CBO/ABO) - /ads\n * Çıkış: item.json._finalAdBody\n */\n\n// ------------- Helpers -------------\nfunction clean(v) {\n  if (typeof v === 'string') {\n    return v\n      .replace("
+      },
+      {
+        "node": "Ad Set Budget - Ad Set Create → Build Final Ad Body (ABO)",
+        "has_utm": true,
+        "code_snippet": "/**\n * Build Final Ad Body (CBO/ABO) - /ads\n * Çıkış: item.json._finalAdBody\n */\n\n// ------------- Helpers -------------\nfunction clean(v) {\n  if (typeof v === 'string') {\n    return v\n      .replace("
+      },
+      {
+        "node": "Code in JavaScript3",
+        "has_utm": true,
+        "code_snippet": "// === helpers ===\nconst norm = (v) => (v == null ? '' : String(v).trim());\nconst isFilled = (v) => norm(v) !== '';\nconst pick = (fresh, backup, original='') =>\n  isFilled(fresh) ? norm(fresh) : (isFi"
+      },
+      {
+        "node": "Build CBO Ads Update",
+        "has_utm": true,
+        "code_snippet": "// Build CBO Ads UPDATE Bodies\n// Çıkışlar:\n//   item.json._adId           -> update edilecek mevcut ad id\n//   item.json._accountId      -> act_{account_id} için\n//   item.json._adUpdateBody   -> sad"
+      },
+      {
+        "node": "Build ABO Ads Update",
+        "has_utm": true,
+        "code_snippet": "// Build CBO Ads UPDATE Bodies\n// Çıkışlar:\n//   item.json._adId           -> update edilecek mevcut ad id\n//   item.json._accountId      -> act_{account_id} için\n//   item.json._adUpdateBody   -> sad"
+      }
+    ],
+    "error_handling": [
+      {
+        "node": "Build Final Ad Set Body",
+        "has_error_handling": true
+      },
+      {
+        "node": "Campaign Budget - Ad Set Create → Build Final Ad Body (CBO)",
+        "has_error_handling": true
+      },
+      {
+        "node": "Ad Set Budget - Ad Set Create → Build Final Ad Body (ABO)",
+        "has_error_handling": true
+      },
+      {
+        "node": "Code in JavaScript - Fetch from Meta",
+        "has_error_handling": true
+      },
+      {
+        "node": "Build CBO Ads Update",
+        "has_error_handling": true
+      },
+      {
+        "node": "Build ABO Ads Update",
+        "has_error_handling": true
+      }
+    ],
+    "validation": [
+      {
+        "node": "Code in JavaScript",
+        "has_validation": true
+      },
+      {
+        "node": "Build Final Ad Set Body",
+        "has_validation": true
+      },
+      {
+        "node": "Build Final Ad Set Body1",
+        "has_validation": true
+      },
+      {
+        "node": "Campaign Budget - Ad Set Create → Build Final Ad Body (CBO)",
+        "has_validation": true
+      },
+      {
+        "node": "Carry Row & Sheet",
+        "has_validation": true
+      },
+      {
+        "node": "Ad Set Budget - Ad Set Create → Build Final Ad Body (ABO)",
+        "has_validation": true
+      },
+      {
+        "node": "Code in JavaScript - Sync",
+        "has_validation": true
+      },
+      {
+        "node": "Code in JavaScript - Fetch from Meta",
+        "has_validation": true
+      },
+      {
+        "node": "Code in JavaScript3",
+        "has_validation": true
+      },
+      {
+        "node": "🛡️ Input Validation",
+        "has_validation": true
+      },
+      {
+        "node": "Build CBO Campaign Update Body",
+        "has_validation": true
+      },
+      {
+        "node": "Build Final Ad Set UPDATE Body (CBO)",
+        "has_validation": true
+      },
+      {
+        "node": "Build CBO Ads Update",
+        "has_validation": true
+      },
+      {
+        "node": "Build ABO Campaign Update Body",
+        "has_validation": true
+      },
+      {
+        "node": "Build Final Ad Set UPDATE Body (ABO)",
+        "has_validation": true
+      },
+      {
+        "node": "Build ABO Ads Update",
+        "has_validation": true
+      }
+    ]
+  },
+  "issues": [
+    "⚠️  Code in JavaScript: No try-catch error handling",
+    "⚠️  Build Final Ad Set Body1: No try-catch error handling",
+    "⚠️  Carry Row & Sheet: No try-catch error handling",
+    "⚠️  Code in JavaScript - Sync: No try-catch error handling",
+    "⚠️  Code in JavaScript3: No try-catch error handling",
+    "⚠️  🛡️ Input Validation: No try-catch error handling",
+    "⚠️  Build CBO Campaign Update Body: No try-catch error handling",
+    "⚠️  Build Final Ad Set UPDATE Body (CBO): No try-catch error handling",
+    "⚠️  Build ABO Campaign Update Body: No try-catch error handling",
+    "⚠️  Build Final Ad Set UPDATE Body (ABO): No try-catch error handling"
+  ]
+}

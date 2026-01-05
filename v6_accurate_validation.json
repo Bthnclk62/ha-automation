@@ -1,0 +1,12 @@
+{
+  "all_passed": true,
+  "critical_issues": [],
+  "warnings": [
+    "11 HTTP nodes without retry (UPDATE module)"
+  ],
+  "stats": {
+    "total_nodes": 64,
+    "http_nodes": 17,
+    "http_with_retry": 6
+  }
+}
